@@ -4,8 +4,8 @@ AUX_SOURCE_DIRECTORY(. SRC_LIST)
 ADD_LIBRARY(
         native_lib
         SHARED
-#        src/main/cpp/native_lib.c
-        ${SRC_LIST}
+        src/main/cpp/native_lib.c
+#        ${SRC_LIST}
 )
 
 FIND_LIBRARY(
