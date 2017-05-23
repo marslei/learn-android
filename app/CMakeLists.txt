@@ -1,17 +1,19 @@
 cmake_minimum_required(VERSION 3.4.1)
 
-add_library(
+AUX_SOURCE_DIRECTORY(. SRC_LIST)
+ADD_LIBRARY(
         native_lib
         SHARED
-        src/main/cpp/native_lib.c
+#        src/main/cpp/native_lib.c
+        ${SRC_LIST}
 )
 
-find_library(
+FIND_LIBRARY(
         log-lib
         log
 )
 
-target_link_libraries(
+TARGET_LINK_LIBRARIES(
         native_lib
         ${log-lib}
 )

@@ -14,7 +14,7 @@ extern "C" {
  */
 JNIEXPORT jstring JNICALL Java_cn_leicixiang_leitest_myJNI_sayHello
   (JNIEnv *env, jclass jobj){
-    return (*env)->NewStringUTF(env, "WWW.LEICIXIANG.CN");
+    return (*env)->NewStringUTF(env, "WWW.LEICIXIANG.CN FROM JNI");
   }
 
 #ifdef __cplusplus
